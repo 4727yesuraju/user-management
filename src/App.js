@@ -9,7 +9,7 @@ export default function App() {
   const {token} = useUserStore();
   return (
     <div>
-      <Header />
+      {token && <Header />}
       <Routes>
         <Route path="/login" element={!token ? <Login/> :  <Navigate to="/users" /> } />
         <Route path="/users" element={token ? <UsersPage/> :  <Navigate to="/login" /> } />

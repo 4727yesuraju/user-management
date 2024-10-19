@@ -17,7 +17,7 @@ function EditForm({editItem}) {
          updateUser(editItem.id,inputs);
     }
   return (
-    <div className='p-3 mx-auto fixed w-1/3  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-red-500  flex items-center flex-col py-4 rounded-lg'>
+    <div className='p-3 mx-auto fixed w-4/5 sm:w-1/2 lg:w-1/3 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-red-500  flex items-center flex-col py-4 rounded-lg'>
         <CircleX className="size-8 absolute top-2 right-2 cursor-pointer" onClick={()=>setEditItem(null)}/>
     <h1 className='text-3xl text-center font-semibold my-7'>update</h1>
     <form onSubmit={handleUpdate} className='flex flex-col gap-4'>

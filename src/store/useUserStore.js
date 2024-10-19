@@ -32,6 +32,11 @@ export const useUserStore = create((set,get)=>({
           }
        },
 
+       logout : ()=>{
+              localStorage.removeItem('token');
+              set({token : null});
+       },
+
        getPageInfo : async()=>{
               try {
                     const res = await axios.get(`/api/users?page=${get().page}`);
