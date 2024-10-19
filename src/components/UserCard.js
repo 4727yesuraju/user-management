@@ -23,7 +23,7 @@ function UserCard({item}) {
         </div>
       </div>
       <div className="w-full h-4/6 overflow-hidden rounded-lg">
-          <img alt="avatar" src={item.avatar} className="w-full h-full object-cover hover:scale-110 duration-75" />
+          <img alt="avatar" src={item.avatar} className="w-full h-full object-cover hover:scale-110 duration-300" />
       </div>
     </div>
   )
