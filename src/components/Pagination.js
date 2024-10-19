@@ -7,7 +7,7 @@ function Pagination({page,setPage}) {
   return (
     <ul className="inline-flex -space-x-px text-sm"> 
         <li>
-          <button onClick={()=>setPage(page+1)} disabled={page==1} className={`flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 ${ page === 1 ? "opacity-50 cursor-not-allowed" : "opacity-100"}`}>
+          <button onClick={()=>setPage(page+1)} disabled={page===1} className={`flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 ${ page === 1 ? "opacity-50 cursor-not-allowed" : "opacity-100"}`}>
             <ChevronLeft />
           </button>
         </li>
