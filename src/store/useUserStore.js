@@ -60,6 +60,7 @@ export const useUserStore = create((set,get)=>({
 
        },
        updateUser : async (id,data)=>{
+              if(!data.first_name || !data.last_name || !data.email) return toast.error("all fields are required");
               try {
                      set({loading : true});
                      const res = await axios.put(`/api/users/${id}`,data);
