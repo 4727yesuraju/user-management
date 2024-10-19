@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 # User management app
 
 ## Instructions to run locally
@@ -30,4 +29,3 @@
       REACT_APP_BASE_URI = https://reqres.in
    ```
 ---
->>>>>>> db979bec33dd4267a4ffd5e759662f0abde7a929
