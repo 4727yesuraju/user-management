@@ -1,7 +1,12 @@
+import { Route, Routes } from "react-router-dom";
+import UserPage from "./pages/UserPage";
+import Login from "./pages/Login";
+
 export default function App() {
+  const token = false;
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <Routes>
+       <Route path="*" element={token ? <UserPage /> : <Login/> } />
+     </Routes>
   )
 }
